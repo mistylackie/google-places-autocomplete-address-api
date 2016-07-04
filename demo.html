@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="San Luis Obispo CA home value " />
+    <title>Get The Value Of Your San Luis Obispo Home</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+    <link rel="stylesheet" href="https://www.realshout.com/members/templates/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.realshout.com/members/templates/css/home-value.css">
+  </head>
+
+  <body id="style-default">
+    <main id="user-background">
+      <div class="container">
+        <div class="row">
+          <div class="panel">
+            <div class="panel-body">
+              <div id="formError1" style="display:none" class="alert alert-danger">
+                  Property Address Required! Please fill in and submit again.
+              </div>
+              <div id="step1" style="display: block;">
+                <div class="col-xs-12 bottom-pad">
+                  <h2>Get The Value Of Your San Luis Obispo Home</h2>
+                  <p>Enter your full address below to receive en estimated value of your home.</p>
+                </div>
+                <form method="post" id="homeaddress">
+                  <div class="form-group form-group-lg">
+                    <label for="address" class="sr-only">Address</label>
+                    <div class="col-md-10">
+                      <input type="text" name="address" class="form-control input-lg" id="address" placeholder="Ex: 123 Example St. Your City, CA 12345">
+                      <input type="hidden" id="listing_id1" name="listing_id1" value="378515">
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <input class="btn btn-lg btn-block btn-default" id="submit" onClick="submitAddress()" type="button" value="Continue  >">
+                  </div>
+                  <input id="street_number" type="hidden"></input>
+                  <input id="route" type="hidden"></input>
+                  <input id="locality" type="hidden"></input>
+                  <input id="administrative_area_level_1" type="hidden"></input>
+                  <input id="postal_code" type="hidden"></input>
+                  <input id="country" type="hidden"></input>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="row top-pad bottom-pad">
+          <div id="disclaimer" class="col-xs-12 text-center">
+            <small>John Thomas&nbsp;&nbsp;Real Estate Company Name</small>
+          </div>
+          <div class="col-xs-12 text-center">
+            <img src="https://www.realshout.com/images/equalhousingthumb.jpg" alt="Equal Housing" style="max-height:50px">   <img src="https://www.realshout.com/images/mlsthumb.jpg" alt="MLS Logo" style="max-height:50px">
+          </div>
+          <div class="col-xs-12 text-center top-pad">
+            <p class="poweredby">Powered By:<br /><a href="https://www.realshout.com/"><img src="https://www.realshout.com/images/logo.png" /></a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- Include Google Maps JS API -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=YOUR-GOOGLE-API-KEY"></script>
+
+    <!-- Custom JS code to bind to Autocomplete API -->
+    <script type="text/javascript" src="https://www.realshout.com/members/templates/js/autocomplete.js"></script>
+
+  </body>
+</html>
